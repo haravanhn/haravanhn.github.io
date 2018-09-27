@@ -177,9 +177,9 @@
         <div class="wrap-header-l header-desk">
           <h1>Tất cả những gì bạn cần <span>để bán hàng khắp mọi nơi</span></h1>
           <div class="form-group form-email">
-            <input type="email" class="form-control input-email hrv-email-input" placeholder="Nhập email của bạn" name="email"
+            <input type="email" id="email" class="form-control input-email hrv-email-input" placeholder="Nhập email của bạn" name="email"
               class="mail">
-            <a class="btn btn-fix btn-regis textboxnhapemail hrv-btn-register">Dùng thử miễn phí ! </a>
+            <a id="trial-button" class="btn btn-fix btn-regis textboxnhapemail"><i id="loading-email" class="fa fa-spinner fa-spin loading-icon"></i><span id="trial-text">Dùng thử miễn phí !</span> </a>
           </div>
         </div>
       </div>
@@ -420,7 +420,6 @@
             <h2 class="omni_info_lg">Omnichannel</h2>
             <p class="omni_info_ct">Giải pháp hợp nhất việc
               <span>kinh doanh online và chuỗi cửa hàng</span></p>
-            <a class="btn btn_more_info" rel="dofollow">Tìm hiểu thêm</a>
           </div>
         </div>
       </div>
@@ -1980,19 +1979,22 @@
         <div class="modal-content">
           <div class="modal-header contact-modal-header-container" style="border: 0px;">
             <button type="button" class="close" data-dismiss="modal" id="close-modal">&times;</button>
-            <h4 class="modal-title contact-modal-headline" style="font-family: 'Open Sans'">Đăng kí để nhận được tư vấn từ chúng tôi</h4>
+            <h4 class="modal-title contact-modal-headline" style="font-family: 'Open Sans'" id="modal-headline">Đăng kí để nhận được tư vấn từ chúng tôi</h4>
           </div>
-          <div class="modal-body" style="background-image: url('https://static.ladipage.net/s1440x950/57b167c9ca57d39c18a1c57c/bg-1.png');
+          <div class="modal-body" id="modal-body" style="background-image: url('https://static.ladipage.net/s1440x950/57b167c9ca57d39c18a1c57c/bg-1.png');
           background-color: rgba(237,237,237,1);
           background-size: cover;
           background-attachment: scroll;
           background-position: top left;
           background-repeat: no-repeat;">
-            <form>
-              <input class="form-control" placeholder="Họ và tên" style="margin: 20px 0px">
-              <input class="form-control" placeholder="Số điện thoại" style="margin: 20px 0px">
+            <form id="contact-form">
+              <input class="form-control" id="name" placeholder="Họ và tên" required style="margin: 20px 0px">
+              <input class="form-control" type="tel" pattern="[0-9]{9,15}" id="phone" oninvalid="this.setCustomValidity('Hãy nhập chính xác số điện thoại để nhận được tư vấn')"
+              oninput="this.setCustomValidity('')" placeholder="Số điện thoại" required style="margin: 20px 0px">
               <div class="text-center">
-                <button type="submit" class="btn btn-success text-center" style="margin: 20px 0px">Đăng ký</button>
+                <button type="submit" class="btn btn-success text-center" style="margin: 20px 0px">
+                    <i id="loading" class="fa fa-spinner fa-spin loading-icon"></i>Đăng ký
+                </button>
               </div>
             </form>
           </div>
