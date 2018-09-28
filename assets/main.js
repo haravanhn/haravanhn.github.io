@@ -56,7 +56,7 @@ $(document).ready(function(){
           "entry.246802766" : email
         },
         headers: {
-          // origin: 'haravanhn.github.io'
+          origin: 'https://haravanhn.github.io'
         },
         success: function() {
           $("#loading-email").hide();
@@ -69,6 +69,8 @@ $(document).ready(function(){
           window.location.href = "https://www.haravan.com/?registry=true&ref=mienbac&hchan=thanh.phamduc-hanoi";
         }
       })
+    } else {
+      window.location.href = "https://www.haravan.com/?registry=true&ref=mienbac&hchan=thanh.phamduc-hanoi";
     }
   })
 })
