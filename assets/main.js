@@ -73,6 +73,22 @@ $(document).ready(function(){
       window.location.href = "https://www.haravan.com/?registry=true&ref=mienbac&hchan=thanh.phamduc-hanoi";
     }
   })
+
+  $("#outer-omnichannel").click(function(){
+    window.location.href = "https://www.haravan.com/omnichannel/?ref=mienbac&hchan=thanh.phamduc-hanoi";
+  })
+
+  $("#omni-shadow").click(function(){
+    window.location.href = "https://www.haravan.com/omnichannel/?ref=mienbac&hchan=thanh.phamduc-hanoi";
+  })
+
+  $("#omni-img-res").click(function(){
+    window.location.href = "https://www.haravan.com/omnichannel/?ref=mienbac&hchan=thanh.phamduc-hanoi";
+  })
+
+  $("#outer-omniinfo").click(function(){
+    window.location.href = "https://www.haravan.com/omnichannel/?ref=mienbac&hchan=thanh.phamduc-hanoi";
+  })
 })
 
 function showModal() {
