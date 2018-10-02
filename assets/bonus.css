@@ -98,3 +98,15 @@
 .textboxnhapemail {
   min-width: 180px;
 }
+
+@media (min-width: 768px) {
+  .custom-modal-content {
+    width: 400px;
+  }
+}
+
+@media (max-width: 767px) {
+  .custom-modal-content {
+    width: 300px;
+  }
+}
