@@ -246,3 +246,52 @@
   transform-origin: 50% 50%;
   background-color: #00aff2;
 }
+
+.custom-header {
+  background: url(./desktop.jpg) no-repeat center;
+  background-size: cover;
+  /* background-position: 50% 0; */
+  overflow: hidden;
+  /* position: relative; */
+  color: #fff;
+  z-index: 2;
+  padding: 0px;
+}
+
+@media screen and (max-width: 450px) {
+  .custom-header {
+    background-position: 42% 0;
+  }
+  .custom-form-email {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .custom-header {
+    background-position: 36% 0;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .custom-wrap-header {  
+    top: 60% !important;
+  }
+  .custom-form-email {
+    width: 50% !important;
+    float: right !important;
+  }
+}
+
+@media screen and (max-width: 979px) and (min-width: 768px) {
+  .custom-wrap-header {  
+    top: 56% !important;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .custom-wrap-header {  
+    top: 60% !important;
+  }
+}
