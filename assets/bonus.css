@@ -295,3 +295,18 @@
     top: 60% !important;
   }
 }
+
+.header-background {
+  background: url(./business.jpg) no-repeat center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding-bottom: 56.25%;
+}
+
+@media screen and (min-width: 768px){
+  .header-background {
+    background-attachment: fixed;
+  }
+}
