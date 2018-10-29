@@ -310,3 +310,47 @@
     background-attachment: fixed;
   }
 }
+
+.header-content {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  display: flex;
+  bottom: 0px;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-responsive-text {
+  color: white;
+  font-size: 3vw;
+  font-weight: 700;
+  font-family: "Roboto";
+}
+
+.opacity-40 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: black;
+  opacity: 0.5;
+}
+
+.header-line {
+  border-top: 3px solid #00a0ee;
+  width: 40%;
+  margin: auto;
+  margin-top: 2vw;
+}
+
+.header-btn {
+  margin-top: 4vw;
+}
+
+.header-btn:hover,
+.header-btn:focus {
+  outline: none !important;
+}
