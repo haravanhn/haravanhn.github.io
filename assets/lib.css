@@ -3186,6 +3186,7 @@ section.home_hrfunnel{background:#1565c0;	color:#fff;}
 	transition:transform .6s ease;
 }
 .item-part svg.img-black{fill:#a8a8a8}
+.item-part img.img-hover {position: absolute;top: 0;left: 0;right: 0; bottom: 0; margin: auto;	opacity: 0}
 .item-part svg.img-hover {position: absolute;top: 0;left: 0;right: 0;	opacity: 0; margin: auto;}
 .item-part a:hover{	-webkit-transform: scale(1.05);-ms-transform: scale(1.05);transform: scale(1.05);}
 .item-part a:hover .img-hover {opacity: 1;}
